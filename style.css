@@ -1,0 +1,1032 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor_menu: #191b1e;
+    --cor_slogan: #370c5a;
+    --cor_link: #730b9c;
+    --cor_site: #fff;
+    --cor_card: #fff;
+    --cor_rodape: #fff;
+    --cor_back: #c7c4c4;
+    --cor_div: #f1f1f1;
+
+    --font_titulo: "Oswald", sans-serif;;
+    --font_paragrafos: "Montserrat", sans-serif;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+@media only screen and (max-width: 599px) { /* Estilos para telas pequenas */
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    header {
+        background-color: var(--cor_menu);
+        font-family: var(--font_paragrafos);
+        border-bottom: solid 2px var(--cor_back);
+        padding: 10px;
+    }
+
+    header img {
+        width: 20px;
+    }
+
+    .flex {
+        display: flex;
+       justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    ul {
+        list-style: none;
+        gap: 30px;
+    }
+
+    header ul li a {
+        text-align: center;
+        text-decoration: none;
+        color: var(--cor_link);
+        font-size: 0.7em;
+    }
+
+    .usando {
+        border-bottom: solid 2px var(--cor_link);
+    }
+
+    main {
+        font-family: var(--font_paragrafos);
+    }
+
+    main h1 {
+        font-size: 2.0em;
+        color: var(--cor_slogan);
+        font-family: var(--font_titulo);
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .top {
+        margin-top: 30px;
+    }
+
+    .logo {
+        width: 100px;
+        border-radius: 50%;
+        margin-top: 30px;
+    }
+
+    .div1 {
+        display: grid;
+        margin: 16px;
+    }
+
+    .div1 p {
+        text-align: center;
+        max-width: 350px;
+        margin-top: 30px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .div1 p b {
+        color: var(--cor_slogan);
+    }
+
+    .p1 {
+        display: grid;
+        margin: 30px 16px;
+        max-width: 599px;
+        text-align: center;
+    }
+
+    main h2 {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 1.5em;
+        font-family: var(--font_titulo);
+        border-bottom: solid 2px var(--cor_menu);
+    }
+
+    .flex1 {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .flex1 img {
+        align-items: center;
+        width: 65px;
+    }
+
+    .card {
+        border: solid 4px var(--cor_slogan);
+        border-radius: 15px;
+        width: 80px;
+        height: 100px;
+    }
+
+    .card p {
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 1.0em;
+        font-family: var(--font_titulo);
+    }
+
+    .button button {
+        display: grid;
+        background-color: var(--cor_slogan);
+        border-radius: 20px;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .button button a {
+        text-decoration: none;
+        font-family: var(--font_paragrafos);
+        color: var(--cor_site);
+        font-size: 1.2em;
+    }
+
+
+    h3 {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 1.5em;
+        font-family: var(--font_titulo);
+    }
+
+    h3 b {
+        color: var(--cor_slogan);
+    }
+
+    .orc section {
+        background-color: var(--cor_back);
+        padding: 17px;
+        align-items: center;
+    }
+
+    .orc section p {
+        text-align: center;
+        font-size: 0.7em;
+        max-width: 200px;
+    }
+
+    .orc section p b {
+        color: var(--cor_slogan);
+    }
+
+    h4 {
+        margin: 30px 16px;
+        font-size: 1.5em;
+        text-align: center;
+        font-family: var(--font_titulo);
+    }
+
+    h4 b {
+        color: var(--cor_slogan);
+    }
+
+    .p2 {
+        text-align: center;
+    }
+
+    .sec1 {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        gap: 16px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .orcs {
+       align-items: center;
+    }
+
+    .orcs img {
+        width: 50px;
+    }
+
+    .orcs h5 {
+        font-size: 1.0em;
+    }
+
+    .pin {
+        background-color: #e7e7e7;
+        padding: 10px;
+    }
+
+    .p3 {
+        display: grid;
+        margin: 0 auto;
+        text-align: center;
+        color: var(--cor_site);
+        background-color: var(--cor_menu);
+        max-width: 700px;
+        padding: 10px;
+        font-size: 1.0em;
+    }
+
+    h5 {
+        text-align: center;
+        font-size: 5.0em;
+        color: var(--cor_slogan);
+    }
+
+    .btn-orc {
+        display: flex;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 15px;
+        background-color: var(--cor_slogan);
+    }
+
+    .btn-orc a {
+        color: var(--cor_site);
+        text-decoration: none;
+        font-family: var(--font_titulo);
+        font-size: 1.2em;
+    }
+
+    footer {
+        background-color: #000000;
+        margin-top: 32px;
+        padding: 10px;
+        border-top: solid 4px var(--cor_back);
+    }
+    
+    .pi {
+        font-size: 0.7em;
+        text-align: center;
+        color: #fff;
+        font-family: var(--font_paragrafos);
+        border-bottom: solid 0.5px #fff;
+        max-width: 380px;
+        margin: auto;
+    
+    }
+    
+    .py {
+        font-size: 0.7em;
+        text-align: center;
+        color: #fff;
+        font-family: var(--font_paragrafos);
+    }
+
+    /**/
+
+    #eu {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        margin: auto;
+        border: solid 4px var(--cor_slogan);
+    }
+
+    .main-dev h3 {
+        text-align: end;
+    }
+
+    .div1-dev {
+        display: grid;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+        margin: 16px;
+    }
+
+    .codigo {
+        width: 48px;
+        height: 48px;
+        border-radius: none;
+        margin: none;
+        border: none;
+    }
+
+    .div2-dev {
+        flex-direction: row-reverse;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .div-normal {
+        text-align: center;
+        color: var(--cor_slogan);
+        margin: 0 auto;
+    }
+
+    .flex7-dev {
+        background-color: var(--cor_back);
+        padding: 25px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .flex7-dev section {
+        align-items: center;
+        text-align: center;
+    }
+
+    .flex7-dev section img {
+        height: 50px;
+    }
+
+    .flex7-dev section a {
+        text-decoration: none;
+        color: var(--cor_menu);
+    }
+
+    
+}
+
+@media only screen and (min-width: 600px) and (max-width: 959px) { /* Estilos para telas médias */
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    header {
+        background-color: var(--cor_menu);
+        font-family: var(--font_paragrafos);
+        border-bottom: solid 2px var(--cor_back);
+        padding: 10px;
+    }
+
+    header img {
+        width: 50px;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul {
+        list-style: none;
+        gap: 30px;
+    }
+
+    header ul li a {
+        text-align: center;
+        text-decoration: none;
+        color: var(--cor_link);
+        font-size: 1em;
+    }
+
+    .usando {
+        border-bottom: solid 2px var(--cor_link);
+    }
+
+    main {
+        font-family: var(--font_paragrafos);
+    }
+
+    main h1 {
+        font-size: 2.0em;
+        color: var(--cor_slogan);
+        font-family: var(--font_titulo);
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .top {
+        margin-top: 30px;
+    }
+
+    .logo {
+        width: 100px;
+        border-radius: 50%;
+        margin-top: 30px;
+    }
+
+    .div1 {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: 0 auto;
+    }
+
+    .div1 p {
+        text-align: center;
+        max-width: 959px;
+        margin-top: 30px;
+    }
+
+    .div1 p b {
+        color: var(--cor_slogan);
+    }
+
+    .p1 {
+        display: grid;
+        margin: 30px 16px;
+        max-width: 959px;
+        text-align: center;
+    }
+
+    main h2 {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 1.5em;
+        font-family: var(--font_titulo);
+        border-bottom: solid 2px var(--cor_menu);
+    }
+
+    .flex1 {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .flex1 img {
+        align-items: center;
+        width: 65px;
+    }
+
+    .card {
+        border: solid 4px var(--cor_slogan);
+        border-radius: 15px;
+        width: 80px;
+        height: 100px;
+    }
+
+    .card p {
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 1.0em;
+        font-family: var(--font_titulo);
+    }
+
+    .button button {
+        display: grid;
+        background-color: var(--cor_slogan);
+        border-radius: 20px;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .button button a {
+        text-decoration: none;
+        font-family: var(--font_paragrafos);
+        color: var(--cor_site);
+        font-size: 1.2em;
+    }
+
+
+    h3 {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 1.5em;
+        font-family: var(--font_titulo);
+    }
+
+    h3 b {
+        color: var(--cor_slogan);
+    }
+
+    .orc section {
+        background-color: var(--cor_back);
+        padding: 30px;
+        align-items: center;
+    }
+
+    .orc section p {
+        text-align: center;
+        font-size: 0.7em;
+        max-width: 300px;
+    }
+
+    .orc section p b {
+        color: var(--cor_slogan);
+    }
+
+    h4 {
+        margin: 30px 16px;
+        font-size: 1.5em;
+        text-align: center;
+        font-family: var(--font_titulo);
+    }
+
+    h4 b {
+        color: var(--cor_slogan);
+    }
+
+    .p2 {
+        text-align: center;
+    }
+
+    .sec1 {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        gap: 16px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .orcs {
+       align-items: center;
+    }
+
+    .orcs img {
+        width: 50px;
+    }
+
+    .orcs h5 {
+        font-size: 1.0em;
+    }
+
+    .pin {
+        background-color: #e7e7e7;
+        padding: 10px;
+    }
+
+    .p3 {
+        display: grid;
+        margin: 0 auto;
+        text-align: center;
+        color: var(--cor_site);
+        background-color: var(--cor_menu);
+        max-width: 700px;
+        padding: 10px;
+        font-size: 1.0em;
+    }
+
+    h5 {
+        text-align: center;
+        font-size: 5.0em;
+        color: var(--cor_slogan);
+    }
+
+    .btn-orc {
+        display: flex;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 15px;
+        background-color: var(--cor_slogan);
+    }
+
+    .btn-orc a {
+        color: var(--cor_site);
+        text-decoration: none;
+        font-family: var(--font_titulo);
+        font-size: 1.2em;
+    }
+
+    footer {
+        background-color: #000000;
+        margin-top: 32px;
+        padding: 10px;
+        border-top: solid 4px var(--cor_back);
+    }
+    
+    .pi {
+        font-size: 0.9em;
+        text-align: center;
+        color: #fff;
+        font-family: var(--font_paragrafos);
+        border-bottom: solid 0.5px #fff;
+        max-width: 380px;
+        margin: auto;
+    
+    }
+    
+    .py {
+        font-size: 0.9em;
+        text-align: center;
+        color: #fff;
+        font-family: var(--font_paragrafos);
+    }
+
+        /**/
+
+        #eu {
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            margin: auto;
+            border: solid 4px var(--cor_slogan);
+        }
+    
+        .main-dev h3 {
+            text-align: end;
+        }
+    
+        .div1-dev {
+            display: grid;
+            align-items: center;
+            gap: 30px;
+            text-align: center;
+            margin: 16px;
+        }
+    
+        .codigo {
+            width: 48px;
+            height: 48px;
+            border-radius: none;
+            margin: none;
+            border: none;
+        }
+    
+        .div2-dev {
+            flex-direction: row-reverse;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    
+        .div-normal {
+            text-align: center;
+            color: var(--cor_slogan);
+            margin: 0 auto;
+        }
+    
+        .flex7-dev {
+            background-color: var(--cor_back);
+            padding: 25px;
+            display: flex;
+            border-radius: 20px;
+            justify-content: space-around;
+        }
+    
+        .flex7-dev section {
+            align-items: center;
+            text-align: center;
+        }
+    
+        .flex7-dev section img {
+            height: 70px;
+        }
+    
+        .flex7-dev section a {
+            text-decoration: none;
+            color: var(--cor_menu);
+        }
+    
+    
+}
+    
+@media only screen and (min-width: 960px) { /* Estilos para telas grandes */
+
+    .container {
+        width: 960px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    header {
+        background-color: var(--cor_menu);
+        font-family: var(--font_paragrafos);
+        border-bottom: solid 4px var(--cor_back);
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul {
+        list-style: none;
+        gap: 30px;
+    }
+
+    header ul li:hover {
+        transform: scale(1.2);
+        transition: 0.5s;
+    }
+
+    header ul li a {
+        text-align: center;
+        text-decoration: none;
+        color: var(--cor_link);
+        font-size: 1.1em;
+    }
+
+    header ul li a:hover {
+        color: var(--cor_site);
+        border-bottom: solid 2px #fff;
+    }
+
+    .usando {
+        border-bottom: solid 2px var(--cor_link);
+    }
+
+    .usando:hover {
+        border-bottom: solid 2px #fff;
+    }
+
+    main {
+        font-family: var(--font_paragrafos);
+    }
+
+    main h1 {
+        font-size: 2.5em;
+        color: var(--cor_slogan);
+        font-family: var(--font_titulo);
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .top {
+        margin-top: 30px;
+    }
+
+    .logo {
+        width: 250px;
+        border-radius: 50%;
+    }
+
+    .div1 {
+        gap: 16px;
+    }
+
+    .div1 p {
+        text-align: center;
+        max-width: 900px;
+    }
+
+    .div1 p b {
+        color: var(--cor_slogan);
+    }
+
+    .p1 {
+        display: grid;
+        margin: 30px auto;
+        max-width: 1000px;
+        text-align: center;
+    }
+
+    main h2 {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 2.0em;
+        font-family: var(--font_titulo);
+        border-bottom: solid 2px var(--cor_menu);
+    }
+
+    .flex1 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .flex1 img {
+        width: 250px;
+    }
+
+    .card {
+        border: solid 4px var(--cor_slogan);
+        border-radius: 15px;
+        flex-wrap: wrap;
+    }
+
+    .card p {
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 1.5em;
+        font-family: var(--font_titulo);
+    }
+
+    .button button {
+        display: grid;
+        background-color: var(--cor_slogan);
+        border-radius: 20px;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .button button a {
+        text-decoration: none;
+        font-family: var(--font_paragrafos);
+        color: var(--cor_site);
+        font-size: 1.5em;
+    }
+
+    .button button a:hover {
+        transform: scale(0.9);
+        border-bottom: solid 1px var(--cor_site);
+        transition: 0.5s;
+    }
+
+    h3 {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 2.5em;
+        font-family: var(--font_titulo);
+    }
+
+    h3 b {
+        color: var(--cor_slogan);
+    }
+
+    .orc section {
+        background-color: var(--cor_back);
+        border-radius: 15px;
+        padding: 60px;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .orc section p {
+        text-align: center;
+        font-size: 1.2em;
+        max-width: 650px;
+    }
+
+    .orc section p b {
+        color: var(--cor_slogan);
+    }
+
+    h4 {
+        margin-top: 30px;
+        font-size: 1.7em;
+        text-align: center;
+        font-family: var(--font_titulo);
+    }
+
+    h4 b {
+        color: var(--cor_slogan);
+    }
+
+    .p2 {
+        text-align: center;
+    }
+
+    .sec1 {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        gap: 16px;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .orcs {
+       align-items: center;
+    }
+
+    .orcs img {
+        width: 50px;
+    }
+
+    .orcs h5 {
+        font-size: 1.1em;
+    }
+
+    .pin {
+        background-color: #e7e7e7;
+        padding: 10px;
+    }
+
+    .p3 {
+        display: grid;
+        margin: 0 auto;
+        text-align: center;
+        color: var(--cor_site);
+        background-color: var(--cor_menu);
+        max-width: 700px;
+        padding: 10px;
+        font-size: 1.3em;
+    }
+
+    h5 {
+        text-align: center;
+        font-size: 7.0em;
+        color: var(--cor_slogan);
+    }
+
+    .btn-orc {
+        display: flex;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 15px;
+        background-color: var(--cor_slogan);
+    }
+
+    .btn-orc a {
+        color: var(--cor_site);
+        text-decoration: none;
+        font-family: var(--font_titulo);
+        font-size: 1.5em;
+    }
+
+    .btn-orc a:hover {
+        transform: scale(0.9);
+        border-bottom: solid 1px var(--cor_site);
+        transition: 0.5s;
+    }
+
+    footer {
+        background-color: #000000;
+        margin-top: 32px;
+        padding: 10px;
+        border-top: solid 4px var(--cor_back);
+    }
+    
+    .pi {
+        text-align: center;
+        color: #fff;
+        font-family: var(--font_paragrafos);
+        border-bottom: solid 0.5px #fff;
+        max-width: 380px;
+        margin: auto;
+    
+    }
+    
+    .py {
+        text-align: center;
+        color: #fff;
+        font-family: var(--font_paragrafos);
+    }
+
+    /**pagina dev**/
+
+    #eu {
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        margin: auto;
+        border: solid 4px var(--cor_slogan);
+    }
+
+    .main-dev h3 {
+        text-align: end;
+    }
+
+    .div1-dev {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .codigo {
+        width: 48px;
+        height: 48px;
+        border-radius: none;
+        margin: none;
+        border: none;
+    }
+
+    .div2-dev {
+        flex-direction: row-reverse;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .div-normal {
+        text-align: center;
+        color: var(--cor_slogan);
+        margin: 0 auto;
+    }
+
+    .flex7-dev {
+        background-color: var(--cor_back);
+        padding: 25px;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 20px;
+    }
+
+    .flex7-dev section {
+        align-items: center;
+        text-align: center;
+    }
+
+    .flex7-dev section a {
+        text-decoration: none;
+        color: var(--cor_menu);
+    }
+
+    .flex7-dev section a:hover {
+        color: var(--cor_link);
+        transition: 0.5s
+    }
+
+    #scale:hover {
+        transform: scale(1.3);
+        transition: 0.5s;
+    }
+
+}
